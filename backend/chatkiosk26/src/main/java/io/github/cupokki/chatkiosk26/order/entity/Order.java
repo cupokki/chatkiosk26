@@ -1,4 +1,4 @@
-package io.github.cupokki.chatkiosk26.order.repository;
+package io.github.cupokki.chatkiosk26.order.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,6 +1,6 @@
 package io.github.cupokki.chatkiosk26.order.dto;
 
-import io.github.cupokki.chatkiosk26.order.repository.Order;
+import io.github.cupokki.chatkiosk26.order.entity.Order;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

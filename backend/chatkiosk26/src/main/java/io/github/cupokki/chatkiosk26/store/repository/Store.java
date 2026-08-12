@@ -3,7 +3,6 @@ package io.github.cupokki.chatkiosk26.store.repository;
 import jakarta.persistence.*;
 
 import java.util.List;
-import java.util.ArrayList;
 
 @Entity
 public record Store(
@@ -12,9 +11,11 @@ public record Store(
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         Long id,
 
-        String title
+        String title,
 
-//        List<?> menu
+        List<Stock> menu
+
+        List<>
 
 
 ) {
