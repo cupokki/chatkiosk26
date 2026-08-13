@@ -1,6 +1,10 @@
 package io.github.cupokki.chatkiosk26.store.repository;
 
-import jakarta.persistence.*;
+import io.github.cupokki.chatkiosk26.order.entity.Menu;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 import java.util.List;
 
@@ -11,12 +15,9 @@ public record Store(
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         Long id,
 
-        String title,
+        String name,
 
-        List<Stock> menu
-
-        List<>
-
+        List<Menu> menus
 
 ) {
 }

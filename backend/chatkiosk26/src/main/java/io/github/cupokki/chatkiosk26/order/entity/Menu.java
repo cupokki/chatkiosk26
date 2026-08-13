@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @Entity
-public record Product(
+public record Menu(
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         Long id,

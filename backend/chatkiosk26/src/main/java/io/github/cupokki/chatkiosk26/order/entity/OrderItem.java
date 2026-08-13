@@ -20,8 +20,8 @@ public record OrderItem (
     BigDecimal orderPrice,
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "product_id")
-    Product product,
+    @JoinColumn(name = "menu_id")
+    Menu menu,
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "order_id")
