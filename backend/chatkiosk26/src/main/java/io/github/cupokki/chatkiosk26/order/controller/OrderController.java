@@ -1,6 +1,10 @@
 package io.github.cupokki.chatkiosk26.order.controller;
 
-import org.springframework.web.bind.annotation.RestController;
+import io.github.cupokki.chatkiosk26.order.dto.OrderDto;
+import io.github.cupokki.chatkiosk26.order.service.OrderService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController("/order")
 @RequiredArgsConstructor
@@ -36,6 +40,4 @@ public class OrderController {
         var res = orderService.update();
         return ResponseEntity.ok(res);
     }
-
-    public Repon
 }

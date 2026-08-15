@@ -1,6 +1,6 @@
 package io.github.cupokki.chatkiosk26.order.repository;
 
-import io.github.cupokki.chatkiosk26.order.entity.Order;
+import io.github.cupokki.chatkiosk26.order.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

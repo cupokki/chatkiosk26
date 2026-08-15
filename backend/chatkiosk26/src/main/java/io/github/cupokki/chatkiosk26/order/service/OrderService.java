@@ -2,7 +2,7 @@ package io.github.cupokki.chatkiosk26.order.service;
 
 import io.github.cupokki.chatkiosk26.order.dto.OrderDto;
 import io.github.cupokki.chatkiosk26.order.dto.OrderMapper;
-import io.github.cupokki.chatkiosk26.order.entity.Order;
+import io.github.cupokki.chatkiosk26.order.Order;
 import io.github.cupokki.chatkiosk26.order.repository.OrderRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;

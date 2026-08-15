@@ -39,12 +39,6 @@ dependencies {
     implementation 'org.mapstruct:mapstruct:1.5.5.Final'
 }
 
-dependencyManagement {
-    imports {
-        mavenBom "org.springframework.ai:spring-ai-bom:1.0.0-M4"
-    }
-}
-
 generateJava {
     schemaPaths = ["${projectDir}/src/main/resources/graphql-client"]
     packageName = 'io.github.cupokki.chatkiosk26.codegen'
