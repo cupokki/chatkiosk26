@@ -1,6 +1,6 @@
 package io.github.cupokki.chatkiosk26.order;
 
-import io.github.cupokki.chatkiosk26.Menu.Menu;
+import io.github.cupokki.chatkiosk26.menu.Menu;
 import io.github.cupokki.chatkiosk26.common.base.BaseEntity;
 import jakarta.persistence.*;
 

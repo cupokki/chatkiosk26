@@ -36,9 +36,10 @@ public class StoreController {
      * @param storeId
      * @return
      */
-    @GetMapping("/{storeId}/categories")
-    public ResponseEntity<?> getCategories(@PathVariable String storeId) {
-        return ResponseEntity.ok().build();
+    @GetMapping("/{storeId:[0-9]+}/categories")
+    public ResponseEntity<?> getCategories(@PathVariable Long storeId) {
+        var res = storeService.getStoreCategories(storeId);
+        return ResponseEntity.ok(res);
     }
 
     /**
@@ -46,9 +47,10 @@ public class StoreController {
      * @param storeId
      * @return
      */
-    @GetMapping("/{storeId}/menus")
-    public ResponseEntity<?> getMenus(@PathVariable String storeId) {
-        return ResponseEntity.ok().build();
+    @GetMapping("/{storeId:[0-9]+}/menus")
+    public ResponseEntity<?> getMenus(@PathVariable Long storeId) {
+        var res = storeService.getStoreMenus(storeId);
+        return ResponseEntity.ok(res);
     }
 
     /**

@@ -1,4 +1,4 @@
-package io.github.cupokki.chatkiosk26.Menu;
+package io.github.cupokki.chatkiosk26.menu;
 
 import io.github.cupokki.chatkiosk26.Tag.Tag;
 import io.github.cupokki.chatkiosk26.common.base.BaseEntity;

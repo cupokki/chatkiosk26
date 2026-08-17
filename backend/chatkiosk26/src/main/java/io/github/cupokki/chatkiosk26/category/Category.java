@@ -1,10 +1,8 @@
 package io.github.cupokki.chatkiosk26.category;
 
 import io.github.cupokki.chatkiosk26.common.base.BaseEntity;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import io.github.cupokki.chatkiosk26.store.Store;
+import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 
@@ -17,4 +15,10 @@ public class Category extends BaseEntity {
         Long id;
 
         String name;
+
+        @ManyToOne(fetch = FetchType.LAZY)
+        @JoinColumn(name = "store_id")
+        Store store;
+
+//        Integer displayOrder;
 }

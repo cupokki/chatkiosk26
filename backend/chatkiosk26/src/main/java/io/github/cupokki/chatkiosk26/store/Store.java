@@ -1,10 +1,7 @@
 package io.github.cupokki.chatkiosk26.store;
 
-import io.github.cupokki.chatkiosk26.Menu.Menu;
 import io.github.cupokki.chatkiosk26.common.base.BaseEntity;
 import jakarta.persistence.*;
-
-import java.util.List;
 
 @Entity
 public class Store extends BaseEntity {
