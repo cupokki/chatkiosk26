@@ -4,9 +4,11 @@ import io.github.cupokki.chatkiosk26.store.service.StoreService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/api/v1/store")
+@RestController("/api/v1")
 @Slf4j
 @RequiredArgsConstructor
 public class StoreController {
@@ -32,45 +34,14 @@ public class StoreController {
 //    }
 
     /**
-     * 매장별 카테고리 목록 조회
-     * @param storeId
-     * @return
-     */
-    @GetMapping("/{storeId:[0-9]+}/categories")
-    public ResponseEntity<?> getCategories(@PathVariable Long storeId) {
-        var res = storeService.getStoreCategories(storeId);
-        return ResponseEntity.ok(res);
-    }
-
-    /**
-     * 매장별 메뉴 목록 조회
-     * @param storeId
-     * @return
-     */
-    @GetMapping("/{storeId:[0-9]+}/menus")
-    public ResponseEntity<?> getMenus(@PathVariable Long storeId) {
-        var res = storeService.getStoreMenus(storeId);
-        return ResponseEntity.ok(res);
-    }
-
-    /**
      * LangChain 대화형 장바구니 액션
      * @param storeId
      * @return
      */
-    @PostMapping("/{storeId}/chat")
+    @PostMapping("/stores/{storeId}/chat")
     public ResponseEntity<?> chat(@PathVariable String storeId) {
 //        storeService.chat(storeId);
         return ResponseEntity.ok().build();
     }
 
-    /**
-     * 결제 완료 요청 스텁
-     * @param storeId
-     * @return
-     */
-    @PostMapping("/{storeId}/orders")
-    public ResponseEntity<?> checkout(@PathVariable String storeId) {
-        return ResponseEntity.ok().build();
-    }
 }

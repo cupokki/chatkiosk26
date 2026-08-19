@@ -1,5 +1,6 @@
 package io.github.cupokki.chatkiosk26.store.service;
 
+import io.github.cupokki.chatkiosk26.category.dto.CategoryDto;
 import io.github.cupokki.chatkiosk26.menu.repository.MenuRepository;
 import io.github.cupokki.chatkiosk26.category.repository.CategoryRepository;
 import io.github.cupokki.chatkiosk26.store.dto.StoreDto;
@@ -29,13 +30,9 @@ public class StoreService {
         return null;
     }
 
-    public List<StoreDto.CategoriesResponse> getStoreCategories(Long storeId) {
-        return categoryRepository.findCategoryByStoreId(storeId);
-    }
 
-    public List<StoreDto.MenusResponse> getStoreMenus(Long storeId) {
-        return menuRepository.findMenusByStoreId(storeId);
-    }
+
+
 
 //    public StoreDto addItem() {
 //        return null;

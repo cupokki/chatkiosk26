@@ -1,4 +1,4 @@
-package io.github.cupokki.chatkiosk26.Tag;
+package io.github.cupokki.chatkiosk26.tag;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

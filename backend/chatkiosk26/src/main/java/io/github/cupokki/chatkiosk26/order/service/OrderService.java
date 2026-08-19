@@ -22,12 +22,7 @@ public class OrderService {
 
 
     /** 주문 결제 요청 */
-    @Transactional
-    public void checkout(OrderDto.CheckoutRequest req) {
-        Order order = orderMapper.toOrder(req);
-        orderRepository.save(order);
+    public void checkout(String storeId, OrderDto.CheckoutRequest checkoutRequest) {
+        return;
     }
-
-
-
 }

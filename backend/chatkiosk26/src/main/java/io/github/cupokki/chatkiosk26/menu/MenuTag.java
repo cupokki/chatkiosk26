@@ -1,6 +1,6 @@
 package io.github.cupokki.chatkiosk26.menu;
 
-import io.github.cupokki.chatkiosk26.Tag.Tag;
+import io.github.cupokki.chatkiosk26.tag.Tag;
 import io.github.cupokki.chatkiosk26.common.base.BaseEntity;
 import jakarta.persistence.*;
 import lombok.Builder;
