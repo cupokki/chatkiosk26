@@ -22,10 +22,6 @@ public class StoreService {
         return null;
     }
 
-    public StoreDto getSalesByPeriod () {
-        return null;
-    }
-
     public StoreDto getStatistics () {
         return null;
     }

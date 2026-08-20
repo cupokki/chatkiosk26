@@ -3,10 +3,12 @@ package io.github.cupokki.chatkiosk26.order;
 import io.github.cupokki.chatkiosk26.menu.Menu;
 import io.github.cupokki.chatkiosk26.common.base.BaseEntity;
 import jakarta.persistence.*;
+import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+@Getter
 @Entity
 public class OrderItem extends BaseEntity {
 

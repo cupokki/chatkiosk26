@@ -2,7 +2,9 @@ package io.github.cupokki.chatkiosk26.store;
 
 import io.github.cupokki.chatkiosk26.common.base.BaseEntity;
 import jakarta.persistence.*;
+import lombok.Getter;
 
+@Getter
 @Entity
 public class Store extends BaseEntity {
 
