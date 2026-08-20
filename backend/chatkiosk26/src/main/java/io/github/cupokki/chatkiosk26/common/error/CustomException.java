@@ -1,4 +1,4 @@
-package io.github.cupokki.chatkiosk26.global.error;
+package io.github.cupokki.chatkiosk26.common.error;
 
 import lombok.Getter;
 

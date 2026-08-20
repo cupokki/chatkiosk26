@@ -1,5 +1,7 @@
-package io.github.cupokki.chatkiosk26.global.error;
+package io.github.cupokki.chatkiosk26.global.handler;
 
+import io.github.cupokki.chatkiosk26.common.error.CustomException;
+import io.github.cupokki.chatkiosk26.common.error.ErrorCode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
