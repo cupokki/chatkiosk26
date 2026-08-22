@@ -12,13 +12,13 @@ import lombok.Getter;
 public class Category extends BaseEntity {
 
         @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-        Long id;
+        private Long id;
 
-        String name;
+        private String name;
 
         @ManyToOne(fetch = FetchType.LAZY)
         @JoinColumn(name = "store_id")
-        Store store;
+        private Store store;
 
 //        Integer displayOrder;
 }

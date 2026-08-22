@@ -13,13 +13,15 @@ import java.util.List;
 @Getter
 @Builder
 public class Order extends BaseEntity {
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+        @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
         Long id;
 
         @OneToOne(fetch = FetchType.LAZY)
         Store store;
 
-        @OneToMany(mappedBy = "order_item_id")
+//        @OneToMany(mappedBy = "order_item_id")
+        @OneToMany(fetch = FetchType.LAZY)
         List<OrderItem> orderItems;
 
         String status;

@@ -8,6 +8,8 @@ import lombok.Builder;
 import lombok.Getter;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -23,6 +25,9 @@ public class Menu extends BaseEntity {
 
         @OneToOne(fetch = FetchType.LAZY)
         Category category;
+
+        @OneToMany(cascade = CascadeType.ALL)
+        List<MenuTag> tags = new ArrayList<>();
 
         BigDecimal price;
 
