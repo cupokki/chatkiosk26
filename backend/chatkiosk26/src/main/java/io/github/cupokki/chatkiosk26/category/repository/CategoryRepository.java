@@ -17,6 +17,8 @@ public interface CategoryRepository extends JpaRepository<Category, Long> {
      * @return
      */
     //    List<StoreDto.CategoriesResponse> findTop10ByStoreId(Long storeId);
-    @Query("SELECT c FROM Category c WHERE c.storeId = :storeId LIMIT 5")
-    List<CategoryDto.CategoriesResponse> findCategoryByStoreId(@Param("storeId") Long storeId);
+//    @Query("SELECT c FROM Category c WHERE c.storeId = :storeId")
+//    List<CategoryDto.CategoriesResponse> findCategoryByStoreId(@Param("storeId") Long storeId);
+
+    List<CategoryDto.CategoriesResponse> findTop5ByStoreId(@Param("storeId") Long storeId);
 }

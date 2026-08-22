@@ -14,6 +14,7 @@ public class CategoryService {
     private final CategoryRepository categoryRepository;
 
     public List<CategoryDto.CategoriesResponse> getStoreCategories(Long storeId) {
-        return categoryRepository.findCategoryByStoreId(storeId);
+//        return categoryRepository.findCategoryByStoreId(storeId);
+        return categoryRepository.findTop5ByStoreId(storeId);
     }
 }

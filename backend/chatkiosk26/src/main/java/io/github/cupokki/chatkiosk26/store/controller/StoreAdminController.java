@@ -1,21 +1,21 @@
 package io.github.cupokki.chatkiosk26.store.controller;
 
-import io.github.cupokki.chatkiosk26.store.service.StoreService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@RestController("/api/v1/admin/store")
-@Slf4j
+@RestController
+@RequestMapping("/api/v1")
 @RequiredArgsConstructor
+@Slf4j
 public class StoreAdminController {
     /**
      * 신규 메뉴 등록
      * @param storeId
      * @return
      */
-    @GetMapping("/{storeId}/menus")
+    @GetMapping("/admin/stores/{storeId}/categories")
     public ResponseEntity<?> getCategories(@PathVariable String storeId) {
         return ResponseEntity.ok().build();
     }
@@ -25,7 +25,7 @@ public class StoreAdminController {
      * @param storeId
      * @return
      */
-    @GetMapping("/{storeId}/menus")
+    @GetMapping("/admin/stores/{storeId}/menus")
     public ResponseEntity<?> getMenus(@PathVariable String storeId) {
         return ResponseEntity.ok().build();
     }
@@ -36,7 +36,7 @@ public class StoreAdminController {
      * @param menuId
      * @return
      */
-    @PatchMapping("/{storeId}/menus/{menuId}")
+    @PatchMapping("/admin/stores/{storeId}/menus/{menuId}")
     public ResponseEntity<?> chat(@PathVariable String storeId, @PathVariable String menuId) {
         return ResponseEntity.ok().build();
     }

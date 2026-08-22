@@ -1,6 +1,6 @@
 package io.github.cupokki.chatkiosk26.store.repository;
 
-import org.apache.catalina.Store;
+import io.github.cupokki.chatkiosk26.store.Store;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

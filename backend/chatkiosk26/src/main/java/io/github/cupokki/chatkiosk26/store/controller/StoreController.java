@@ -6,11 +6,13 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/api/v1")
-@Slf4j
+@RestController
+@RequestMapping("/api/v1/stores")
 @RequiredArgsConstructor
+@Slf4j
 public class StoreController {
 
     private final StoreService storeService;
@@ -38,10 +40,11 @@ public class StoreController {
      * @param storeId
      * @return
      */
-    @PostMapping("/stores/{storeId}/chat")
+    @PostMapping("/{storeId}/chat")
     public ResponseEntity<?> chat(@PathVariable String storeId) {
 //        storeService.chat(storeId);
         return ResponseEntity.ok().build();
     }
 
 }
+
