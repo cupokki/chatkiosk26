@@ -1,6 +1,13 @@
 spring:
   application:
     name: chatkiosk26
+  profiles:
+    active:
+      - dev
+
+  docker:
+    compose:
+      enabled: false
 #langchain4j:
 #  google-ai-gemini:
 #    chat-model:

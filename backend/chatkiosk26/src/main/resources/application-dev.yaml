@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/chatkiosk26
-    username: root
-    password: password
+    username: myuser
+    password: secret
     driver-class-name: org.postgresql.Driver
 
   jpa:
